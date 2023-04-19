@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+# Shell script for building ia32-generic-qemu project
+#
+# Copyright 2022 Phoenix Systems
+# Author: Lukasz Kosinski
+#
+
+[ "${BASH_SOURCE[0]}" -ef "$0" ] && echo "You should source this script, not execute it!" && exit 1
+
+
+#
+# Ports configuration - additional to the one from _targets
+#
+export PORTS_MBEDTLS=n
+export PORTS_AZURE_SDK=n
+
+
+b_image_project () {
+	b_log "The images have been built for the ${TARGET} platform"
+}

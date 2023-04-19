@@ -1,0 +1,80 @@
+diff -ruN c/compat/setproctitle.c d/compat/setproctitle.c
+--- c/compat/setproctitle.c	2022-02-03 11:08:54.693945591 +0100
++++ d/compat/setproctitle.c	2022-02-03 12:08:17.749924656 +0100
+@@ -128,7 +128,12 @@
+ 	char buf[1024], ptitle[1024];
+ 	size_t len = 0;
+ 	int r;
++#ifdef __phoenix__
++	/* our toolchain doesn't provide __progname */
++	const char *__progname = "iked";
++#else
+ 	extern char *__progname;
++#endif
+ #if SPT_TYPE == SPT_PSTAT
+ 	union pstun pst;
+ #endif
+diff -ruN c/ikectl/ikectl.c d/ikectl/ikectl.c
+--- c/ikectl/ikectl.c	2022-02-03 11:09:06.897836709 +0100
++++ d/ikectl/ikectl.c	2022-02-03 12:08:27.434766900 +0100
+@@ -71,7 +71,12 @@
+ __dead void
+ usage(void)
+ {
++#ifdef __phoenix__
++	/* our toolchain doesn't provide __progname */
++	const char *__progname = "ikectl";
++#else
+ 	extern char *__progname;
++#endif
+ 
+ 	fprintf(stderr, "usage: %s [-q] [-s socket] command [arg ...]\n",
+ 	    __progname);
+diff -ruN c/iked/iked.c d/iked/iked.c
+--- c/iked/iked.c	2022-02-03 11:09:21.369709148 +0100
++++ d/iked/iked.c	2022-02-03 12:06:23.650331230 +0100
+@@ -60,7 +60,12 @@
+ __dead void
+ usage(void)
+ {
++#ifdef __phoenix__
++	/* our toolchain doesn't provide __progname */
++	const char	*__progname = "iked";
++#else
+ 	extern char	*__progname;
++#endif
+ 
+ 	fprintf(stderr, "usage: %s [-dnSTtv] [-D macro=value] "
+ 	    "[-f file] [-p udpencap_port] [-s socket]\n", __progname);
+diff -ruN c/iked/log.c d/iked/log.c
+--- c/iked/log.c	2022-02-03 11:09:21.373709113 +0100
++++ d/iked/log.c	2022-02-03 12:06:56.580576874 +0100
+@@ -52,7 +52,12 @@
+ void
+ log_init(int n_debug, int facility)
+ {
++#ifdef __phoenix__
++	/* our toolchain doesn't provide __progname */
++	const char	*__progname = "iked";
++#else
+ 	extern char	*__progname;
++#endif
+ 
+ 	debug = n_debug;
+ 	verbose = n_debug;
+diff -ruN c/regress/test_helper/test_helper.c d/regress/test_helper/test_helper.c
+--- c/regress/test_helper/test_helper.c	2022-02-03 11:09:30.097632995 +0100
++++ d/regress/test_helper/test_helper.c	2022-02-03 12:01:59.578412799 +0100
+@@ -96,7 +96,12 @@
+ 		}				\
+ 	} while (0)
+ 
++#ifdef __phoenix__
++/* our toolchain doesn't provide __progname */
++static const char *__progname = "test_helper";
++#else
+ extern char *__progname;
++#endif
+ 
+ static int verbose_mode = 0;
+ static int quiet_mode = 0;

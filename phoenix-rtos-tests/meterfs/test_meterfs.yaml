@@ -1,0 +1,16 @@
+test:
+    type: unity
+    targets:
+        value: [host-generic-pc]
+    tests:
+        - name: meterfs_allocate
+          execute: test_meterfs_allocate .emustorage
+    
+        - name: meterfs_openclose
+          execute: test_meterfs_openclose .emustorage
+    
+        - name: meterfs_writeread
+          execute: test_meterfs_writeread .emustorage
+    
+        - name: meterfs_miscellaneous
+          execute: test_meterfs_miscellaneous .emustorage

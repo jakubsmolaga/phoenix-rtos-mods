@@ -1,0 +1,77 @@
+#!/bin/bash
+#
+# Shell script for building Phoenix-RTOS microdistribution
+#
+# Copyright 2018, 2019, 2020 Phoenix Systems
+# Author: Kaja Swat, Aleksander Kaminski, Pawel Pisarczyk, Lukasz Kosinski, Hubert Buczynski
+#
+[ "${BASH_SOURCE[0]}" -ef "$0" ] && echo "You should source this script, not execute it!" && exit 1
+
+
+# optional args will be printed in red
+b_list_available_targets() {
+	[ "$#" -gt 0 ] && echo -e "\e[1;31m$*\e[0m"
+	echo -e "Please specify a valid target by setting TARGET variable to one of:"
+	find _projects/*/build.project 2>/dev/null | cut -d/ -f 2
+}
+
+# it's best to provide TARGET by env variable
+if [ -z "$TARGET" ]; then
+	b_list_available_targets "TARGET variable not set"
+	exit 1
+fi
+
+
+TARGET_FAMILY=$(echo "$TARGET" | awk -F- '{ print $1 }')
+TARGET_SUBFAMILY="$(echo "$TARGET" | awk -F- '{ print $2 }')"
+TARGET_PROJECT="$(echo "$TARGET" | awk -F- '{ print $3 }')"
+
+if [ -z "$TARGET_FAMILY" ] || [ -z "$TARGET_SUBFAMILY" ] || [ -z "$TARGET_PROJECT" ] || [ "$TARGET" != "$TARGET_FAMILY"-"$TARGET_SUBFAMILY"-"$TARGET_PROJECT" ]; then
+	b_list_available_targets "TARGET='$TARGET' has invalid format"
+	exit 1
+fi
+
+
+TARGET_FILE=$(realpath "_targets/build.project.$TARGET_FAMILY-$TARGET_SUBFAMILY")
+PROJECT_PATH=$(realpath "_projects/$TARGET")
+PROJECT_FILE="$PROJECT_PATH/build.project"
+
+if [ ! -f "$TARGET_FILE" ]; then
+	b_list_available_targets "TARGET='$TARGET' target file is unavailable"
+	exit 1
+fi
+
+if [ ! -f "$PROJECT_FILE" ]; then
+	b_list_available_targets "TARGET='$TARGET' project file is missing"
+	exit 1
+fi
+
+. "$TARGET_FILE"
+. "$PROJECT_FILE"
+
+
+#
+# Project specific build
+#
+b_build() {
+	declare -F b_build_project >/dev/null && b_build_project
+	b_build_target
+}
+
+#
+# Project specific image
+#
+b_image() {
+	b_image_target
+	declare -F b_image_project >/dev/null && b_image_project
+
+	# Always return 0 to prevent CI from failing
+	return 0
+}
+
+#
+# Project specific build test
+#
+b_build_test() {
+	b_test_target
+}

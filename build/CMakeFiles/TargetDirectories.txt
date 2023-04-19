@@ -1,0 +1,7 @@
+/home/kuba/Desktop/phoenix-rtos-mods/build/CMakeFiles/lwipcore.dir
+/home/kuba/Desktop/phoenix-rtos-mods/build/CMakeFiles/lwipallapps.dir
+/home/kuba/Desktop/phoenix-rtos-mods/build/CMakeFiles/dist.dir
+/home/kuba/Desktop/phoenix-rtos-mods/build/CMakeFiles/package.dir
+/home/kuba/Desktop/phoenix-rtos-mods/build/CMakeFiles/package_source.dir
+/home/kuba/Desktop/phoenix-rtos-mods/build/CMakeFiles/edit_cache.dir
+/home/kuba/Desktop/phoenix-rtos-mods/build/CMakeFiles/rebuild_cache.dir

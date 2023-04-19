@@ -1,0 +1,10 @@
+#ifndef IMX6ULL_WATCHDOG
+#define IMX6ULL_WATCHDOG
+
+#include <sys/ioctl.h>
+
+#define WATCHDOG_IOCTL_BASE 'W'
+#define WDIOC_KEEPALIVE     _IO(WATCHDOG_IOCTL_BASE, 5)
+#define WDIOC_SETTIMEOUT    _IOWR(WATCHDOG_IOCTL_BASE, 6, int)
+
+#endif /* IMX6ULL_WATCHDOG */

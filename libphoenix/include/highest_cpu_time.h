@@ -1,0 +1,1 @@
+extern void highest_cpu_time(int pri_min, int pri_max, int* pid, unsigned long long* cpu_time);

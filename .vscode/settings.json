@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "syscall.h": "c"
+    },
+    "cmake.sourceDirectory": "${workspaceFolder}/phoenix-rtos-lwip/lib-lwip"
+}

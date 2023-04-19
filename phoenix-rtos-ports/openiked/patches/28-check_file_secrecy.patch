@@ -1,0 +1,16 @@
+diff -ruN c/iked/parse.y d/iked/parse.y
+--- c/iked/parse.y	2022-02-03 14:44:53.862656928 +0100
++++ d/iked/parse.y	2022-02-03 17:32:44.389998108 +0100
+@@ -1690,10 +1690,12 @@
+ 		warnx("%s: owner not root or current user", fname);
+ 		return (-1);
+ 	}
++#ifndef __phoenix__
+ 	if (st.st_mode & (S_IWGRP | S_IXGRP | S_IRWXO)) {
+ 		warnx("%s: group writable or world read/writable", fname);
+ 		return (-1);
+ 	}
++#endif
+ 	return (0);
+ }
+ 

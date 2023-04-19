@@ -1,0 +1,716 @@
+[
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/init.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/init.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/init.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/init.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/def.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/def.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/def.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/def.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/dns.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/dns.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/dns.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/dns.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/inet_chksum.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/inet_chksum.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/inet_chksum.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/inet_chksum.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/ip.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/ip.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/ip.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/ip.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/mem.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/mem.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/mem.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/mem.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/memp.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/memp.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/memp.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/memp.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/netif.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/netif.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/netif.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/netif.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/pbuf.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/pbuf.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/pbuf.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/pbuf.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/raw.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/raw.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/raw.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/raw.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/stats.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/stats.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/stats.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/stats.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/sys.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/sys.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/sys.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/sys.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/altcp.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/altcp.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/altcp.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/altcp.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/altcp_alloc.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/altcp_alloc.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/altcp_alloc.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/altcp_alloc.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/altcp_tcp.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/altcp_tcp.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/altcp_tcp.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/altcp_tcp.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/tcp.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/tcp.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/tcp.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/tcp.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/tcp_in.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/tcp_in.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/tcp_in.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/tcp_in.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/tcp_out.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/tcp_out.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/tcp_out.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/tcp_out.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/timeouts.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/timeouts.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/timeouts.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/timeouts.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/udp.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/udp.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/udp.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/udp.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/ipv4/autoip.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/ipv4/autoip.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/ipv4/autoip.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/ipv4/autoip.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/ipv4/dhcp.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/ipv4/dhcp.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/ipv4/dhcp.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/ipv4/dhcp.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/ipv4/etharp.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/ipv4/etharp.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/ipv4/etharp.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/ipv4/etharp.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/ipv4/icmp.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/ipv4/icmp.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/ipv4/icmp.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/ipv4/icmp.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/ipv4/igmp.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/ipv4/igmp.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/ipv4/igmp.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/ipv4/igmp.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/ipv4/ip4_frag.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/ipv4/ip4_frag.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/ipv4/ip4_frag.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/ipv4/ip4_frag.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/ipv4/ip4.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/ipv4/ip4.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/ipv4/ip4.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/ipv4/ip4.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/ipv4/ip4_addr.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/ipv4/ip4_addr.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/ipv4/ip4_addr.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/ipv4/ip4_addr.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/ipv6/dhcp6.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/ipv6/dhcp6.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/ipv6/dhcp6.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/ipv6/dhcp6.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/ipv6/ethip6.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/ipv6/ethip6.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/ipv6/ethip6.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/ipv6/ethip6.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/ipv6/icmp6.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/ipv6/icmp6.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/ipv6/icmp6.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/ipv6/icmp6.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/ipv6/inet6.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/ipv6/inet6.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/ipv6/inet6.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/ipv6/inet6.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/ipv6/ip6.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/ipv6/ip6.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/ipv6/ip6.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/ipv6/ip6.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/ipv6/ip6_addr.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/ipv6/ip6_addr.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/ipv6/ip6_addr.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/ipv6/ip6_addr.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/ipv6/ip6_frag.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/ipv6/ip6_frag.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/ipv6/ip6_frag.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/ipv6/ip6_frag.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/ipv6/mld6.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/ipv6/mld6.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/ipv6/mld6.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/ipv6/mld6.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/core/ipv6/nd6.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/ipv6/nd6.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/core/ipv6/nd6.c",
+  "output": "CMakeFiles/lwipcore.dir/src/core/ipv6/nd6.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/api/api_lib.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/api/api_lib.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/api/api_lib.c",
+  "output": "CMakeFiles/lwipcore.dir/src/api/api_lib.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/api/api_msg.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/api/api_msg.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/api/api_msg.c",
+  "output": "CMakeFiles/lwipcore.dir/src/api/api_msg.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/api/err.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/api/err.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/api/err.c",
+  "output": "CMakeFiles/lwipcore.dir/src/api/err.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/api/if_api.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/api/if_api.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/api/if_api.c",
+  "output": "CMakeFiles/lwipcore.dir/src/api/if_api.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/api/netbuf.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/api/netbuf.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/api/netbuf.c",
+  "output": "CMakeFiles/lwipcore.dir/src/api/netbuf.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/api/netdb.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/api/netdb.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/api/netdb.c",
+  "output": "CMakeFiles/lwipcore.dir/src/api/netdb.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/api/netifapi.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/api/netifapi.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/api/netifapi.c",
+  "output": "CMakeFiles/lwipcore.dir/src/api/netifapi.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/api/sockets.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/api/sockets.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/api/sockets.c",
+  "output": "CMakeFiles/lwipcore.dir/src/api/sockets.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/api/tcpip.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/api/tcpip.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/api/tcpip.c",
+  "output": "CMakeFiles/lwipcore.dir/src/api/tcpip.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/ethernet.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ethernet.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ethernet.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/ethernet.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/bridgeif.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/bridgeif.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/bridgeif.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/bridgeif.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/bridgeif_fdb.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/bridgeif_fdb.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/bridgeif_fdb.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/bridgeif_fdb.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/slipif.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/slipif.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/slipif.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/slipif.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/lowpan6_common.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/lowpan6_common.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/lowpan6_common.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/lowpan6_common.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/lowpan6.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/lowpan6.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/lowpan6.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/lowpan6.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/lowpan6_ble.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/lowpan6_ble.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/lowpan6_ble.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/lowpan6_ble.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/zepif.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/zepif.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/zepif.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/zepif.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/ppp/auth.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/auth.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/auth.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/ppp/auth.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/ppp/ccp.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/ccp.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/ccp.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/ppp/ccp.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/ppp/chap-md5.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/chap-md5.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/chap-md5.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/ppp/chap-md5.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/ppp/chap_ms.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/chap_ms.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/chap_ms.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/ppp/chap_ms.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/ppp/chap-new.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/chap-new.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/chap-new.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/ppp/chap-new.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/ppp/demand.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/demand.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/demand.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/ppp/demand.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/ppp/eap.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/eap.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/eap.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/ppp/eap.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/ppp/ecp.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/ecp.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/ecp.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/ppp/ecp.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/ppp/eui64.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/eui64.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/eui64.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/ppp/eui64.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/ppp/fsm.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/fsm.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/fsm.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/ppp/fsm.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/ppp/ipcp.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/ipcp.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/ipcp.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/ppp/ipcp.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/ppp/ipv6cp.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/ipv6cp.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/ipv6cp.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/ppp/ipv6cp.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/ppp/lcp.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/lcp.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/lcp.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/ppp/lcp.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/ppp/magic.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/magic.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/magic.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/ppp/magic.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/ppp/mppe.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/mppe.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/mppe.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/ppp/mppe.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/ppp/multilink.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/multilink.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/multilink.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/ppp/multilink.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/ppp/ppp.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/ppp.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/ppp.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/ppp/ppp.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/ppp/pppapi.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/pppapi.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/pppapi.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/ppp/pppapi.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/ppp/pppcrypt.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/pppcrypt.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/pppcrypt.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/ppp/pppcrypt.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/ppp/pppoe.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/pppoe.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/pppoe.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/ppp/pppoe.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/ppp/pppol2tp.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/pppol2tp.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/pppol2tp.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/ppp/pppol2tp.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/ppp/pppos.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/pppos.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/pppos.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/ppp/pppos.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/ppp/upap.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/upap.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/upap.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/ppp/upap.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/ppp/utils.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/utils.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/utils.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/ppp/utils.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/ppp/vj.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/vj.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/vj.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/ppp/vj.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/ppp/polarssl/arc4.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/polarssl/arc4.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/polarssl/arc4.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/ppp/polarssl/arc4.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/ppp/polarssl/des.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/polarssl/des.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/polarssl/des.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/ppp/polarssl/des.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/ppp/polarssl/md4.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/polarssl/md4.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/polarssl/md4.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/ppp/polarssl/md4.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/ppp/polarssl/md5.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/polarssl/md5.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/polarssl/md5.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/ppp/polarssl/md5.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipcore.dir/src/netif/ppp/polarssl/sha1.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/polarssl/sha1.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/netif/ppp/polarssl/sha1.c",
+  "output": "CMakeFiles/lwipcore.dir/src/netif/ppp/polarssl/sha1.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_asn1.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_asn1.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_asn1.c",
+  "output": "CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_asn1.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_core.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_core.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_core.c",
+  "output": "CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_core.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_mib2.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_mib2.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_mib2.c",
+  "output": "CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_mib2.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_mib2_icmp.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_mib2_icmp.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_mib2_icmp.c",
+  "output": "CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_mib2_icmp.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_mib2_interfaces.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_mib2_interfaces.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_mib2_interfaces.c",
+  "output": "CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_mib2_interfaces.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_mib2_ip.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_mib2_ip.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_mib2_ip.c",
+  "output": "CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_mib2_ip.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_mib2_snmp.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_mib2_snmp.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_mib2_snmp.c",
+  "output": "CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_mib2_snmp.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_mib2_system.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_mib2_system.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_mib2_system.c",
+  "output": "CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_mib2_system.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_mib2_tcp.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_mib2_tcp.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_mib2_tcp.c",
+  "output": "CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_mib2_tcp.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_mib2_udp.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_mib2_udp.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_mib2_udp.c",
+  "output": "CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_mib2_udp.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_snmpv2_framework.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_snmpv2_framework.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_snmpv2_framework.c",
+  "output": "CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_snmpv2_framework.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_snmpv2_usm.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_snmpv2_usm.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_snmpv2_usm.c",
+  "output": "CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_snmpv2_usm.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_msg.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_msg.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_msg.c",
+  "output": "CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_msg.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipallapps.dir/src/apps/snmp/snmpv3.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmpv3.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmpv3.c",
+  "output": "CMakeFiles/lwipallapps.dir/src/apps/snmp/snmpv3.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_netconn.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_netconn.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_netconn.c",
+  "output": "CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_netconn.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_pbuf_stream.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_pbuf_stream.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_pbuf_stream.c",
+  "output": "CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_pbuf_stream.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_raw.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_raw.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_raw.c",
+  "output": "CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_raw.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_scalar.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_scalar.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_scalar.c",
+  "output": "CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_scalar.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_table.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_table.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_table.c",
+  "output": "CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_table.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_threadsync.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_threadsync.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_threadsync.c",
+  "output": "CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_threadsync.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_traps.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_traps.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmp_traps.c",
+  "output": "CMakeFiles/lwipallapps.dir/src/apps/snmp/snmp_traps.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipallapps.dir/src/apps/http/altcp_proxyconnect.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/http/altcp_proxyconnect.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/http/altcp_proxyconnect.c",
+  "output": "CMakeFiles/lwipallapps.dir/src/apps/http/altcp_proxyconnect.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipallapps.dir/src/apps/http/fs.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/http/fs.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/http/fs.c",
+  "output": "CMakeFiles/lwipallapps.dir/src/apps/http/fs.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipallapps.dir/src/apps/http/http_client.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/http/http_client.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/http/http_client.c",
+  "output": "CMakeFiles/lwipallapps.dir/src/apps/http/http_client.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipallapps.dir/src/apps/http/httpd.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/http/httpd.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/http/httpd.c",
+  "output": "CMakeFiles/lwipallapps.dir/src/apps/http/httpd.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipallapps.dir/src/apps/lwiperf/lwiperf.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/lwiperf/lwiperf.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/lwiperf/lwiperf.c",
+  "output": "CMakeFiles/lwipallapps.dir/src/apps/lwiperf/lwiperf.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipallapps.dir/src/apps/smtp/smtp.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/smtp/smtp.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/smtp/smtp.c",
+  "output": "CMakeFiles/lwipallapps.dir/src/apps/smtp/smtp.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipallapps.dir/src/apps/sntp/sntp.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/sntp/sntp.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/sntp/sntp.c",
+  "output": "CMakeFiles/lwipallapps.dir/src/apps/sntp/sntp.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipallapps.dir/src/apps/mdns/mdns.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/mdns/mdns.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/mdns/mdns.c",
+  "output": "CMakeFiles/lwipallapps.dir/src/apps/mdns/mdns.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipallapps.dir/src/apps/netbiosns/netbiosns.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/netbiosns/netbiosns.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/netbiosns/netbiosns.c",
+  "output": "CMakeFiles/lwipallapps.dir/src/apps/netbiosns/netbiosns.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipallapps.dir/src/apps/tftp/tftp_server.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/tftp/tftp_server.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/tftp/tftp_server.c",
+  "output": "CMakeFiles/lwipallapps.dir/src/apps/tftp/tftp_server.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipallapps.dir/src/apps/mqtt/mqtt.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/mqtt/mqtt.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/mqtt/mqtt.c",
+  "output": "CMakeFiles/lwipallapps.dir/src/apps/mqtt/mqtt.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipallapps.dir/src/apps/altcp_tls/altcp_tls_mbedtls.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/altcp_tls/altcp_tls_mbedtls.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/altcp_tls/altcp_tls_mbedtls.c",
+  "output": "CMakeFiles/lwipallapps.dir/src/apps/altcp_tls/altcp_tls_mbedtls.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipallapps.dir/src/apps/altcp_tls/altcp_tls_mbedtls_mem.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/altcp_tls/altcp_tls_mbedtls_mem.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/altcp_tls/altcp_tls_mbedtls_mem.c",
+  "output": "CMakeFiles/lwipallapps.dir/src/apps/altcp_tls/altcp_tls_mbedtls_mem.c.o"
+},
+{
+  "directory": "/home/kuba/Desktop/phoenix-rtos-mods/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/lwipallapps.dir/src/apps/snmp/snmpv3_mbedtls.c.o -c /home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmpv3_mbedtls.c",
+  "file": "/home/kuba/Desktop/phoenix-rtos-mods/phoenix-rtos-lwip/lib-lwip/src/apps/snmp/snmpv3_mbedtls.c",
+  "output": "CMakeFiles/lwipallapps.dir/src/apps/snmp/snmpv3_mbedtls.c.o"
+}
+]

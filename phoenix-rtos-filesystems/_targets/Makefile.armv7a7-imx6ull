@@ -1,0 +1,9 @@
+#
+# Makefile for Phoenix-RTOS 3 filesystems
+#
+# iMX6ULL drivers
+#
+# Copyright 2020 Phoenix Systems
+#
+
+DEFAULT_COMPONENTS := dummyfs libjffs2 libmeterfs

@@ -1,0 +1,151 @@
+#!/bin/bash
+#
+# Shell script for building armv7a7-imx6ull project
+#
+# Copyright 2018, 2019, 2020, 2021 Phoenix Systems
+# Author: Kaja Swat, Aleksander Kaminski, Pawel Pisarczyk, Lukasz Kosinski, Maciej Purski
+#
+[ "${BASH_SOURCE[0]}" -ef "$0" ] && echo "You should source this script, not execute it!" && exit 1
+
+. "_targets/build.common"
+
+CROSS=arm-phoenix-
+
+export BUSYBOX_CONFIG="$(realpath "busybox_config")"
+export DROPBEAR_CUSTOM_CFLAGS="-DLTC_NO_BSWAP"
+export PSH_DEFUSRPWDHASH="0B1ANiYi45IhxkfmUW155/GBd4IRE="
+
+#
+# Ports configuration
+#
+export PORTS_BUSYBOX=y
+export PORTS_PCRE=y
+export PORTS_OPENSSL=y
+export PORTS_LIGHTTPD=y
+export PORTS_DROPBEAR=y
+export PORTS_LUA=n
+export PORTS_LZO=y
+export PORTS_OPENVPN=y
+export PORTS_JANSSON=y
+export PORTS_CURL=y
+
+#
+# Platform dependent parameters
+#
+SIZE_PAGE=$((0x1000))
+PAGE_MASK=$((~(SIZE_PAGE - 1)))
+KERNEL_OFFS=$((0x0))          # Disk image kernel offset (in bytes)
+ADDR_DDR=$((0x80000000))
+
+
+#
+# Project specific build
+#
+
+BOOT_DEVICE="flash0"              # Default boot device
+NAME_USER_SCRIPT="user.plo"       # User script name
+MAGIC_USER_SCRIPT=$((0xdabaabad)) # User script magic value
+OFFS_USER_SCRIPT=$((0x0))         # Disk image user script offset (in bytes)
+OFFS_ROOTFS=$((0x1000))           # Disk image rootfs offset (in 512 byte sectors)
+
+
+# Pre-init script is launched before user script
+PREINIT_SCRIPT=(
+	"map ddr 0x80000000 0x87ffffff rwx"
+	"phfs usb0 1.2 phoenixd"
+	"console 0.0"
+	"wait 2000"
+)
+
+
+#TODO: if plo is introduced, BOOT_DEVICE should be changed
+#TODO: if flash driver for imx6ull-evk implementation is introduced, psh should be replaced by imx6ul-flash and psd
+# This is temporary solution for running a system image in RAM
+UPLOAD_SCRIPT=(
+	"kernelimg ${BOOT_DEVICE}"
+	"app ${BOOT_DEVICE} -x dummyfs ddr ddr"
+	"app ${BOOT_DEVICE} -x imx6ull-uart ddr ddr"
+	"app ${BOOT_DEVICE} -x psh ddr ddr"
+)
+
+
+PRIMARY_SCRIPT=(
+	"kernelimg ${BOOT_DEVICE}"
+	"app ${BOOT_DEVICE} -x dummyfs ddr ddr"
+	"app ${BOOT_DEVICE} -x imx6ull-uart ddr ddr"
+	"app ${BOOT_DEVICE} -x psh ddr ddr"
+)
+
+
+b_build_project() {
+	b_log "Building user applications"
+	make -C "_user" all install
+}
+
+
+b_build_target() {
+	b_log "Building $TARGET project"
+}
+
+
+# Temporary solution to omit phoenix-rtos-loader
+b_syspage_gen() {
+	img="$1"
+	uscript="$2"
+
+	vectors=$(readelf -s "${PREFIX_PROG}phoenix-${TARGET_FAMILY}-${TARGET_SUBFAMILY}.elf" | grep "init_vectors" | awk '{ printf("0x%s", $2) }')
+	syspage=$(readelf -s "${PREFIX_PROG}phoenix-${TARGET_FAMILY}-${TARGET_SUBFAMILY}.elf" | grep "syspage_data" | awk '{ printf("0x%s", $2) }')
+	plugin=$(readelf -s "${PREFIX_PROG}phoenix-${TARGET_FAMILY}-${TARGET_SUBFAMILY}.elf" | grep "plugin_ivt" | awk '{ printf("0x%s", $2) }')
+
+	addr=$((syspage-vectors))
+	sz=$((plugin-syspage))
+
+	"$PREFIX_BOOT/syspagen" \
+		-a 32\
+		-s "$ADDR_DDR:$addr:$sz" \
+		-p "$PLO_SCRIPT_DIR/script.plo" \
+		-u "$uscript" \
+		-i "$img"
+}
+
+
+b_image_target() {
+	b_log "Creating image from $PREFIX_ROOTFS"
+
+	b_mkscript_user "${UPLOAD_SCRIPT[@]}"
+	b_mkscript_preinit
+
+	# Build production image
+	b_log "RAM Image"
+	b_kernel_image "$PREFIX_BOOT/phoenix.img"
+	b_syspage_gen "$PREFIX_BOOT/phoenix.img" "$PLO_SCRIPT_DIR/$NAME_USER_SCRIPT"
+
+	b_log "FLASH Image"
+	b_mkscript_user "${PRIMARY_SCRIPT[@]}"
+	b_kernel_image "$PREFIX_BOOT/phoenix-kernel.img"
+	b_syspage_gen "$PREFIX_BOOT/phoenix-kernel.img" "$PLO_SCRIPT_DIR/$NAME_USER_SCRIPT"
+
+	b_log "Creating rootfs"
+	# FIXME: does work only on macOS, for now hackish solution based on extending PATH
+	mtd-utils/build.sh
+	PATH="$(pwd)/_build/host-generic-pc/prog/:$PATH"
+	ROOTFS="$PREFIX_BOOT/rootfs.jffs2"
+
+	mkfs.jffs2 -U -m none -e $((64*4096)) -s 4096 -n -r "$PREFIX_ROOTFS"/ -o "$ROOTFS"
+	if sumtool -e $((64*4096)) -i "$ROOTFS" -o "$ROOTFS.tmp" 2> /dev/null; then
+		echo "JFFS2 Summary nodes created"
+		mv "$ROOTFS.tmp" "$ROOTFS"
+	fi
+
+	sz=$(du -k "$ROOTFS" | awk '{ print $1 }')
+	echo "rootfs size: ${sz}KB"
+}
+
+
+b_test_target() {
+	b_log "Build and install tests in the phoenix-rtos filesystem"
+	make -C "phoenix-rtos-tests" all install
+}
+
+
+export -f b_build_target

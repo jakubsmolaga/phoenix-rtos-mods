@@ -1,0 +1,9 @@
+#
+# Makefile for Phoenix-RTOS 3 device drivers
+#
+# ia32/QEMU drivers
+#
+# Copyright 2019 Phoenix Systems
+#
+
+DEFAULT_COMPONENTS := pc-tty uart16550 pc-ata

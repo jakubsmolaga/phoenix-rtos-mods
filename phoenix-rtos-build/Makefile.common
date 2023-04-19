@@ -1,0 +1,165 @@
+#
+# Common makefile for Phoenix-RTOS 3
+#
+# Copyright 2020 Phoenix Systems
+#
+# %LICENSE%
+#
+
+# set SIL to "" for verbose output
+SIL ?= @
+
+# function - returns the directory of the current Makefile
+my-dir = $(dir $(lastword $(MAKEFILE_LIST)))
+MAKES_PATH := $(abspath $(call my-dir))/makes
+
+#
+# setup basic variables
+#
+TARGET_FAMILY ?= $(firstword $(subst -, ,$(TARGET)-))
+TARGET_SUBFAMILY ?= $(word 2,$(subst -, ,$(TARGET)-))
+
+# reset env variables
+CFLAGS :=
+LDFLAGS :=
+LDFLAGS_PREFIX :=
+
+# specific "-Ox" flag can be set globally for project by setting OLVL variable
+ifneq ($(filter-out -O%,$(OLVL)),)
+  $(error OLVL set but does not provide optimisation flags)
+endif
+
+# for debug build always use -Og optimisation
+ifeq ($(DEBUG), 1)
+  OLVL := -Og
+else
+  CFLAGS += -DNDEBUG
+endif
+
+TOPDIR := $(CURDIR)
+PREFIX_BUILD ?= ../_build/$(TARGET)
+PREFIX_BUILD := $(abspath $(PREFIX_BUILD))
+BUILD_DIR ?= $(PREFIX_BUILD)/$(notdir $(TOPDIR))
+BUILD_DIR := $(abspath $(BUILD_DIR))
+
+# build artifacts dir
+CURR_SUFFIX := $(patsubst $(TOPDIR)/%,%,$(abspath $(CURDIR))/)
+PREFIX_O := $(BUILD_DIR)/$(CURR_SUFFIX)
+
+# target install paths, can be provided exterally
+PREFIX_A ?= $(PREFIX_BUILD)/lib/
+PREFIX_H ?= $(PREFIX_BUILD)/include/
+PREFIX_PROG ?= $(PREFIX_BUILD)/prog/
+PREFIX_PROG_STRIPPED ?= $(PREFIX_BUILD)/prog.stripped/
+ALL_COMPONENTS :=
+
+# default rootfs prefixes
+PREFIX_FS ?= $(abspath $(CURDIR)/../_fs/$(TARGET))
+PREFIX_ROOTFS ?= $(PREFIX_FS)/root/
+
+# Check TARGET and set building options
+include $(MAKES_PATH)/check-target.mk
+
+# setup tools
+include $(MAKES_PATH)/setup-tools.mk
+
+# add utility functions
+include $(MAKES_PATH)/funcs.mk
+
+# provide template files' paths to external makes
+binary.mk := $(MAKES_PATH)/binary.mk
+static-lib.mk := $(MAKES_PATH)/static-lib.mk
+
+# default path for the programs to be installed in rootfs
+DEFAULT_INSTALL_PATH := /bin
+
+# do not clean and build in parallel
+ifneq ($(filter %clean,$(MAKECMDGOALS)),)
+$(info cleaning targets, make parallelism disabled)
+.NOTPARALLEL:
+endif
+
+# generic CFLAGS/LDFLAGS
+LDFLAGS += -L$(PREFIX_A)
+
+# add multilib directory to library search path
+SYSROOT := $(shell $(CC) $(CFLAGS) -print-sysroot)
+MULTILIB_DIR := $(shell $(CC) $(CFLAGS) -print-multi-directory)
+LIBC_INSTALL_DIR := $(SYSROOT)/lib/$(MULTILIB_DIR)
+LDFLAGS += -L$(LIBC_INSTALL_DIR)
+
+# remove local dev path from macros
+CFLAGS += -fmacro-prefix-map=$(dir $(TOPDIR))=
+
+ifneq ($(KERNEL), 1)
+  CFLAGS += -I$(PREFIX_H)
+endif
+
+#
+# Generic rules
+#
+.PHONY: help export-cflags export-ldflags
+
+export-cflags:
+	@echo $(CFLAGS)
+
+export-ldflags:
+	@echo $(LDFLAGS)
+
+help:
+	$(info DEFAULT_COMPONENTS := $(DEFAULT_COMPONENTS))
+	$(info ALL_COMPONENTS := $(ALL_COMPONENTS))
+	@echo
+	@echo "available generic make targets:"
+	@echo "  all             build DEFAULT_COMPONENTS"
+	@echo "  install         install DEFAULT_COMPONENTS into PREFIX_ROOTFS"
+	@echo "  clean           clean ALL_COMPONENTS"
+	@echo "  export-cflags   outputs contents of CFLAGS variable"
+	@echo "  export-ldflags  outputs contents of LDFLAGS variable"
+	@echo
+	@echo "available per-target make targets:"
+	@echo "  <target>          build <target>"
+	@echo "  <target>-install  install <target> into PREFIX_ROOTFS"
+	@echo "  <target>-clean    clean <target>"
+	@echo "  <target>-headers  install <target> headers into staging"
+
+
+#
+# Predefined and pattern rules
+#
+
+
+ARCH =  $(SIL)@mkdir -p $(@D); \
+	printf "AR  %-24s\n" "$(@F)"; \
+	$(AR) $(ARFLAGS) $@ $^ 2>/dev/null
+
+# --whole-archive is needed for linker to always find constructors in .a files
+LINK = $(SIL)mkdir -p $(@D); \
+	printf "LD  %-24s\n" "$(@F)"; \
+	$(LD) $(LDFLAGS) -o "$@"  $(LDFLAGS_PREFIX)--whole-archive $^ $(LDFLAGS_PREFIX)--no-whole-archive $(LDLIBS)
+
+
+HEADER = $(SIL)mkdir -p $(@D); \
+	printf "HEADER %-24s\n" "$<"; \
+	cp -pR "$<" "$@"
+
+INSTALL_FS = $(SIL)printf "INSTALL %s\n" "$(@:$(PREFIX_ROOTFS)%=%)"; \
+	mkdir -p "$(@D)"; \
+	cp -pR "$<" "$(@D)"
+
+$(PREFIX_O)%.o: %.c
+	@mkdir -p $(@D)
+	@printf "CC  %-24s\n" "$<"
+	$(SIL)$(CC) -c $(CFLAGS) "$(abspath $<)" -o "$@"
+	$(SIL)$(CC) -M  -MD -MP -MF $(PREFIX_O)$*.c.d -MT "$@" $(CFLAGS) $<
+
+$(PREFIX_O)%.o: %.S
+	@mkdir -p $(@D)
+	@printf "ASM %-24s\n" "$<"
+	$(SIL)$(CC) -c $(CFLAGS) "$<" -o "$@"
+	$(SIL)$(CC) -M  -MD -MP -MF $(PREFIX_O)$*.S.d -MT "$@" $(CFLAGS) $<
+
+$(PREFIX_PROG_STRIPPED)%: $(PREFIX_PROG)%
+	@mkdir -p $(@D)
+	@printf "STR %-24s\n" "$(@F)"
+	$(SIL)$(STRIP) -o $@ $<
